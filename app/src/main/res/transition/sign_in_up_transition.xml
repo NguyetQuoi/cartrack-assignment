@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="together">
+    <fade android:duration="600" android:interpolator="@android:interpolator/accelerate_cubic" android:startDelay="200">
+        <targets>
+            <target android:targetId="@+id/cbPasswordToggleSignUp"/>
+        </targets>
+    </fade>
+    <slide android:slideEdge="left" android:interpolator="@android:interpolator/accelerate_cubic"
+        android:duration="600">
+        <targets>
+            <target android:targetId="@+id/etMailSignIn"/>
+        </targets>
+    </slide>
+    <slide android:slideEdge="left" android:interpolator="@android:interpolator/accelerate_cubic" android:startDelay="100"
+        android:duration="600">
+        <targets>
+            <target android:targetId="@+id/etPasswordSignIn"/>
+        </targets>
+    </slide>
+    <slide android:slideEdge="left" android:interpolator="@android:interpolator/accelerate_cubic" android:startDelay="200"
+        android:duration="600">
+        <targets>
+            <target android:targetId="@+id/btContinueSignIn"/>
+        </targets>
+    </slide>
+
+    <slide android:slideEdge="left" android:interpolator="@android:interpolator/accelerate_cubic" android:startDelay="300"
+        android:duration="600">
+        <targets>
+            <target android:targetId="@+id/btForgotPassword"/>
+        </targets>
+    </slide>
+
+    <slide android:slideEdge="right" android:interpolator="@android:interpolator/accelerate_cubic"
+        android:duration="600">
+        <targets>
+            <target android:targetId="@+id/etNameSignUp"/>
+        </targets>
+    </slide>
+
+    <slide android:slideEdge="right" android:interpolator="@android:interpolator/accelerate_cubic" android:startDelay="100"
+        android:duration="600">
+        <targets>
+            <target android:targetId="@+id/etMailSignUp"/>
+        </targets>
+    </slide>
+    <slide android:slideEdge="right" android:interpolator="@android:interpolator/accelerate_cubic" android:startDelay="200"
+        android:duration="600">
+        <targets>
+            <target android:targetId="@+id/etPasswordSignUp"/>
+        </targets>
+    </slide>
+    <slide android:slideEdge="right" android:interpolator="@android:interpolator/accelerate_cubic" android:startDelay="300"
+        android:duration="600">
+        <targets>
+            <target android:targetId="@+id/btContinueSignUp"/>
+        </targets>
+    </slide>
+</transitionSet>

@@ -1,0 +1,76 @@
+/* Contains all dependencies definitions used in project.
+ * Please keep them organized in alphabetic order. */
+
+ext {
+    build_version = [
+            compile_sdk_version: 28,
+            min_sdk_version    : 21,
+            target_sdk_version : 28,
+            code_version       : 1,
+            name_version       : '1.0.0'
+    ]
+
+    versions = [
+            architecture_components: '2.4.0-rc01',
+            ch_version             : '2.1.0',
+            android_plugin         : '7.0.3',
+            koin                   : '3.1.2',
+            kotlin                 : '1.5.21',
+            okhttp                 : '3.14.1',
+            retrofit               : '2.9.0',
+            support                : '1.0.0',
+            junit                  : '5.5.0-M1',
+            work_version           : '2.0.1'
+    ]
+
+    build_plugins = [
+            android_gradle: [group: 'com.android.tools.build', name: 'gradle', version: versions.android_plugin],
+            kotlin_gradle : [group: 'org.jetbrains.kotlin', name: 'kotlin-gradle-plugin', version: versions.kotlin],
+            android_junit : [group: 'de.mannodermaus.gradle.plugins', name: 'android-junit5', version: '1.3.2.0'],
+    ]
+    libs = [
+            arch_comp_livedata     : "androidx.lifecycle:lifecycle-livedata:$versions.architecture_components",
+            arch_comp_test         : "androidx.arch.core:core-testing:$versions.ch_version",
+            arch_comp_viewmodel    : "androidx.lifecycle:lifecycle-viewmodel:$versions.architecture_components",
+            arrow                  : "io.arrow-kt:arrow-core:0.8.2",
+            assertJ_android        : "com.squareup.assertj:assertj-android:1.2.0",
+            chat_kit               : 'com.github.stfalcon:chatkit:0.3.3',
+            circle_image_view      : "de.hdodenhof:circleimageview:3.0.0",
+            constraint             : "androidx.constraintlayout:constraintlayout:2.1.1",
+            databinding_compiler   : "androidx.databinding:databinding-compiler:$versions.android_plugin",
+            design                 : "com.google.android.material:material:1.1.0-alpha06",
+            duo_navigation_drawer  : "nl.psdcompany:duo-navigation-drawer:3.0.0",
+            espresso               : "androidx.test.espresso:espresso-core:3.4.0",
+            google_service_location: "com.google.android.gms:play-services-location:16.0.0",
+            google_service_map     : "com.google.android.gms:play-services-maps:16.1.0",
+            junit_api              : "org.junit.jupiter:junit-jupiter-api:$versions.junit",
+            junit_engine           : "org.junit.jupiter:junit-jupiter-engine:$versions.junit",
+            junit_param            : "org.junit.jupiter:junit-jupiter-params:$versions.junit",
+            koin_android           : "org.koin:koin-android:$versions.koin",
+            koin_architecture      : "org.koin:koin-android-viewmodel:$versions.koin",
+            koin_test              : "org.koin:koin-test:$versions.koin",
+            kotlin_ext             : "androidx.core:core-ktx:1.6.0",
+
+            kotlin_stdlib          : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin",
+            kotlintest             : "io.kotlintest:kotlintest-runner-junit5:3.3.2",
+            legacy_support         : "androidx.legacy:legacy-support-v4:1.0.0",
+            mockito_kotlin         : "com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0",
+            okhttp                 : "com.squareup.okhttp3:okhttp:$versions.okhttp",
+            okhttp_logging         : "com.squareup.okhttp3:logging-interceptor:3.14.1",
+            power_mock             : "org.powermock:powermock-api-mockito2:2.0.2",
+            retrofit               : "com.squareup.retrofit2:retrofit:$versions.retrofit",
+            retrofit_gson          : "com.squareup.retrofit2:converter-gson:$versions.retrofit",
+            retrofit_rx_java       : "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit",
+            rx_android             : "io.reactivex.rxjava2:rxandroid:2.1.1",
+            rx_java                : "io.reactivex.rxjava2:rxjava:2.2.8",
+            sdp                    : "com.intuit.sdp:sdp-android:1.0.6",
+            ssp                    : "com.intuit.ssp:ssp-android:1.0.6",
+            steho                  : "com.facebook.stetho:stetho:1.5.1",
+            timber                 : "com.jakewharton.timber:timber:4.7.0",
+            transitionseverywhere  : "com.andkulikov:transitionseverywhere:1.8.1",
+            work_runtime_ktx       : "androidx.work:work-runtime-ktx:$versions.work_version",
+            work_rxjava2           : "androidx.work:work-rxjava2:$versions.work_version",
+            work_testing           : "androidx.work:work-testing:$versions.work_version"
+    ]
+}
+

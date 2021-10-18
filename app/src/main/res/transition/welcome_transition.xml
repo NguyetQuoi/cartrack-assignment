@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="together">
+
+    <transitionSet>
+        <targets>
+            <target android:targetId="@+id/ivBg" />
+            <target android:targetId="@+id/tvWelcome" />
+            <target android:targetId="@+id/ivAppIcon" />
+        </targets>
+        <changeBounds android:duration="1500" />
+    </transitionSet>
+
+    <fade
+        android:duration="1500"
+        android:fadingMode="fade_in">
+        <targets>
+            <target android:targetId="@+id/ivAppIcon" />
+            <target android:targetId="@+id/tvAppDescription" />
+        </targets>
+    </fade>
+
+    <slide
+        android:duration="1500"
+        android:interpolator="@android:interpolator/anticipate_overshoot"
+        android:slideEdge="bottom">
+        <targets>
+            <target android:targetId="@+id/ivAppIcon" />
+            <target android:targetId="@+id/btEmail" />
+        </targets>
+    </slide>
+
+    <slide
+        android:duration="1000"
+        android:interpolator="@android:interpolator/anticipate_overshoot"
+        android:slideEdge="left"
+        android:startDelay="500">
+        <targets>
+            <target android:targetId="@+id/btGoogle" />
+            <target android:targetId="@+id/tvContinueWith" />
+        </targets>
+    </slide>
+
+    <slide
+        android:duration="1000"
+        android:interpolator="@android:interpolator/anticipate_overshoot"
+        android:slideEdge="right"
+        android:startDelay="500">
+        <targets>
+            <target android:targetId="@+id/btFacebook" />
+            <target android:targetId="@+id/tvAppDescription" />
+        </targets>
+    </slide>
+
+    <transition
+        class="com.transitionseverywhere.extra.Scale"
+        android:duration="1500"
+        android:interpolator="@android:interpolator/anticipate_overshoot">
+        <targets>
+            <target android:targetId="@+id/ivAppIcon" />
+        </targets>
+    </transition>
+
+    <transition class="com.zyrous.crowdpop.widget.transition.Rotate"
+        android:duration="1500"
+        android:interpolator="@android:interpolator/anticipate_overshoot">
+        <targets>
+            <target android:targetId="@+id/tvWelcome" />
+        </targets>
+    </transition>
+
+    <slide
+        android:duration="1500"
+        android:interpolator="@android:interpolator/anticipate_overshoot"
+        android:slideEdge="right">
+        <targets>
+            <target android:targetId="@+id/tvWelcome" />
+        </targets>
+    </slide>
+
+</transitionSet>
